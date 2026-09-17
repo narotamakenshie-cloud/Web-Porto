@@ -1,0 +1,875 @@
+<!DOCTYPE html><html class="dark" lang="en" style="width: 100%; overflow-y: auto;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}html{scroll-behavior:smooth;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}.pop{animation:op .16s ease;}.pop-num{display:inline-block;transition:color .25s ease;}.process-item:hover .pop-num{color:#d0bcff;}.pop-num:active{animation:opnum .16s ease;}@keyframes op{0%{transform:scale(1)}50%{transform:scale(.92)}100%{transform:scale(1)}}@keyframes opnum{0%{transform:scale(1)}50%{transform:scale(.85)}100%{transform:scale(1)}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-container":"#a17fdf","inverse-on-surface":"#303034","tertiary":"#d4bbff","on-error-container":"#ffdad6","primary":"#d0bcff","outline-variant":"#494455","secondary-fixed-dim":"#d2bcff","surface-container-lowest":"#0e0e12","error-container":"#93000a","on-primary-fixed-variant":"#550fc4","secondary":"#d2bcff","surface-container-highest":"#353439","inverse-surface":"#e4e1e7","surface-variant":"#353439","on-surface":"#e4e1e7","background":"#131317","on-tertiary-container":"#360e6f","inverse-primary":"#6d38dc","on-secondary-fixed":"#230b4d","on-error":"#690005","on-secondary-container":"#c1a9f2","surface-container-low":"#1b1b1f","on-secondary-fixed-variant":"#4f3b7b","surface-container-high":"#2a292e","surface":"#131317","on-tertiary-fixed-variant":"#55338e","error":"#ffb4ab","on-primary-fixed":"#23005c","primary-fixed-dim":"#d0bcff","surface-dim":"#131317","on-primary":"#3b0091","on-background":"#e4e1e7","on-primary-container":"#330080","tertiary-fixed":"#ebdcff","secondary-container":"#4f3b7b","on-surface-variant":"#cbc3d7","surface-bright":"#39393d","outline":"#958ea0","primary-container":"#9f78ff","surface-tint":"#d0bcff","on-tertiary":"#3d1876","on-tertiary-fixed":"#260058","tertiary-fixed-dim":"#d4bbff","secondary-fixed":"#eaddff","on-secondary":"#382463","surface-container":"#1f1f23","primary-fixed":"#e9ddff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"3rem","gutter-mobile":"1rem","space-xl":"2.5rem","space-md":"1rem","margin-mobile":"1.25rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"display-mobile":["Space Grotesk"],"display":["Space Grotesk"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Space Grotesk"],"body-md":["Plus Jakarta Sans"],"headline-md":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"label-sm":["Space Grotesk"],"body-lg":["Plus Jakarta Sans"],"stat-counter":["Space Grotesk"],"stat-counter-mobile":["Space Grotesk"],"label-md":["Space Grotesk"]},"fontSize":{"display-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"display":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"stat-counter":["44px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"stat-counter-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="h-8 w-8 rounded-full bg-primary-container text-primary flex items-center justify-center font-label-md text-label-md font-semibold" aria-label="Kenshie Narotama Logo">K</span><span class="font-headline-md text-headline-md text-on-surface tracking-tight font-semibold">Kenshie Narotama</span></div><nav class="hidden lg:flex items-center gap-space-sm"><a class="font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary hover:bg-surface-container-low bg-surface-container-lowest/60 px-space-md py-space-xs rounded-lg" href="#services">Services</a><a class="font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary hover:bg-surface-container-low bg-surface-container-lowest/60 px-space-md py-space-xs rounded-lg" href="#works">Works</a><a class="font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary hover:bg-surface-container-low bg-surface-container-lowest/60 px-space-md py-space-xs rounded-lg" href="#experience">Experience</a><a class="font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary hover:bg-surface-container-low bg-surface-container-lowest/60 px-space-md py-space-xs rounded-lg" href="#skills">Skills</a><a class="font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary hover:bg-surface-container-low bg-surface-container-lowest/60 px-space-md py-space-xs rounded-lg" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md transition-all hover:bg-tertiary-container hover:text-on-tertiary-container shadow-[0_0_16px_rgba(159,120,255,0.35)]" href="#contact">Hire Me</a><div class="relative" id="profile-menu">
+<button id="profile-toggle" aria-expanded="false" aria-haspopup="true" class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden ring-2 ring-primary/40 hover:ring-primary transition-all" type="button">
+<img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="foto/saya.jpeg">
+</button>
+<div id="profile-dropdown" class="absolute right-0 top-12 z-50 w-64 rounded-xl bg-surface-container-low border border-outline-variant shadow-2xl p-space-xs hidden">
+<div class="flex items-center gap-space-md px-space-md py-space-sm border-b border-outline-variant/40 mb-space-xs">
+<img alt="Kenshie Narotama" class="w-9 h-9 rounded-full object-cover" src="foto/saya.jpeg">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kenshie Narotama</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DVK Student</span>
+</div>
+</div>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors" href="#"><span class="material-symbols-outlined text-base text-primary">person</span><span class="font-label-md text-label-md text-on-surface">Profile</span></a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors" href="#services"><span class="material-symbols-outlined text-base text-primary">design_services</span><span class="font-label-md text-label-md text-on-surface">Services</span></a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors" href="#works"><span class="material-symbols-outlined text-base text-primary">grid_view</span><span class="font-label-md text-label-md text-on-surface">Selected Works</span></a>
+<div class="my-space-xs border-t border-outline-variant/40"></div>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors" href="https://wa.me/6285854334208" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-base text-primary">chat</span><span class="font-label-md text-label-md text-on-surface">WhatsApp</span></a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg hover:bg-surface-container transition-colors" href="https://mail.google.com/mail/?view=cm&amp;to=narotamakenshie@gmail.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-base text-primary">mail</span><span class="font-label-md text-label-md text-on-surface">Email</span></a>
+</div>
+</div></div></div></header><style>.scroll-nav{position:fixed;right:1rem;top:5rem;bottom:3.5rem;width:26px;z-index:40;display:none;touch-action:none;user-select:none;-webkit-user-select:none;}@media (min-width:1024px){.scroll-nav{display:block;}}.scroll-track{position:relative;width:100%;height:100%;border-radius:9999px;background:rgba(35,35,39,.9);border:1px solid rgba(73,68,85,.65);cursor:grab;}.scroll-track:active{cursor:grabbing;}.scroll-thumb{position:absolute;left:50%;top:0;transform:translateX(-50%);width:20px;height:36px;border-radius:9999px;background:linear-gradient(180deg,#d0bcff,#9f78ff);box-shadow:0 2px 8px rgba(159,120,255,.45),inset 0 0 0 1px rgba(255,255,255,.25);cursor:grab;touch-action:none;display:flex;align-items:center;justify-content:center;color:#3b0091;transition:top .12s ease-out;}</style><div id="scroll-nav" class="scroll-nav" aria-hidden="true"><div class="scroll-track" id="scroll-track"><button id="scroll-thumb" class="scroll-thumb" type="button" aria-label="Gulir antar section"><span class="material-symbols-outlined text-sm">drag_indicator</span></button></div></div><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Hero Section -->
+<section id="profile" class="relative w-full overflow-hidden px-margin py-space-xl lg:py-24 bg-surface">
+<!-- Ambient Radial Violet Lighting Gradients -->
+<div class="absolute top-12 left-1/4 -translate-x-1/2 w-[520px] h-[520px] bg-primary-container/20 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/3 right-10 w-[420px] h-[420px] bg-tertiary-container/15 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Content Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<!-- Live Status Pill -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-low shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Available for DKV Design Projects</span>
+</div>
+<!-- Hero Primary Heading -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display text-display text-on-surface tracking-tight">
+            Kenshie Narotama
+          </h1>
+<span class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight">
+            Visual Communication Design Student</span>
+</div>
+<!-- Subheadline Verbatim -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">Siswa DKV (Desain Komunikasi Visual) di SMKN 10 Surabaya — merancang poster, brand, dan konten media sosial yang mudah dipahami.</p>
+<!-- CTAs & Social Links Cluster -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center justify-center px-space-xl py-space-md rounded-full bg-primary-container text-on-primary font-label-md text-label-md transition-all hover:bg-tertiary-container hover:text-on-tertiary-container shadow-xl" href="#contact">
+            Hire Me
+            <span class="material-symbols-outlined ml-space-xs text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-space-lg py-space-md rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md transition-all hover:bg-surface-bright shadow-sm" href="#works">
+            View Recent Works
+            <span class="material-symbols-outlined ml-space-xs text-base">north_east</span>
+</a>
+</div>
+<!-- Social Proof Handles -->
+<div class="flex items-center gap-space-md pt-space-xs text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline-variant">Connect:</span>
+<div class="flex items-center gap-space-sm">
+<a class="w-[34px] h-[34px] p-2 rounded-full bg-surface-container-low hover:bg-surface-container hover:text-primary transition-all flex items-center justify-center text-on-surface-variant" href="https://wa.me/6285854334208" rel="noreferrer" target="_blank" title="WhatsApp">
+<svg class="w-[1.125rem] h-[1.125rem]" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.24.584 4.424 1.688 6.36L3.29 28.55a.903.903 0 0 0 1.124 1.09l6.288-1.724a12.72 12.72 0 0 0 5.3 1.13h.008c7.06 0 12.796-5.74 12.796-12.8 0-7.066-5.736-12.8-12.796-12.8Zm0 23.04h-.008a10.65 10.65 0 0 1-5.42-1.484l-.39-.23-3.49.956 1.13-3.155-.254-.406a10.48 10.48 0 0 1-1.62-5.72c0-5.876 4.784-10.66 10.664-10.66 5.876 0 10.652 4.784 10.652 10.66 0 5.876-4.776 10.66-10.264 10.66Zm5.804-8.136c-.316-.16-1.864-.92-2.152-1.028-.288-.104-.5-.16-.712.16-.212.32-.82 1.028-1.004 1.24-.184.212-.368.236-.684.076-.316-.156-1.332-.49-2.536-1.564-.936-.838-1.568-1.87-1.752-2.188-.184-.316-.02-.488.14-.644.144-.14.316-.368.472-.552.156-.188.208-.32.316-.532.104-.212.052-.396-.024-.556-.076-.16-.712-1.716-.976-2.352-.256-.616-.52-.532-.712-.542l-.604-.012c-.212 0-.552.076-.84.38-.288.304-1.1 1.076-1.1 2.624 0 1.548 1.128 3.044 1.288 3.252.16.212 2.224 3.396 5.388 4.764.752.328 1.34.524 1.8.668.756.244 1.444.208 1.988.128.608-.088 1.864-.764 2.128-1.5.264-.736.264-1.368.184-1.5-.076-.132-.276-.208-.588-.364Z"/></svg>
+</a>
+<a class="w-[34px] h-[34px] p-2 rounded-full bg-surface-container-low hover:bg-surface-container hover:text-primary transition-all flex items-center justify-center text-on-surface-variant" href="https://mail.google.com/mail/?view=cm&amp;to=narotamakenshie@gmail.com" rel="noreferrer" target="_blank" title="Email">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+<a class="w-[34px] h-[34px] p-2 rounded-full bg-surface-container-low hover:bg-surface-container hover:text-primary transition-all flex items-center justify-center text-on-surface-variant" href="https://instagram.com/k.nshie" rel="noreferrer" target="_blank" title="Instagram">
+<svg class="w-[1.125rem] h-[1.125rem]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9c-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.62c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.25-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.05 1.15.25 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.16 1.04.36 2.19.41 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.25 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.25-1.77-.41-2.19a3.62 3.62 0 0 0-.88-1.35 3.62 3.62 0 0 0-1.35-.88c-.42-.16-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.75-.07Zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92Zm0 1.62a3.84 3.84 0 1 0 0 7.68 3.84 3.84 0 0 0 0-7.68Zm5.9-2.6a1.28 1.28 0 1 1 0 2.56 1.28 1.28 0 0 1 0-2.56Z"/></svg>
+</a>
+<a class="w-[34px] h-[34px] p-2 rounded-full bg-surface-container-low hover:bg-surface-container hover:text-primary transition-all flex items-center justify-center text-on-surface-variant" href="https://github.com/narotamakenshie-cloud" rel="noreferrer" target="_blank" title="GitHub">
+<svg class="w-[1.125rem] h-[1.125rem]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Editorial Hero Portrait -->
+<div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+<div class="relative w-72 sm:w-80 lg:w-96 aspect-square rounded-[20px] bg-surface-container-high p-2 shadow-2xl">
+<img alt="Foto profil Kenshie Narotama" class="w-full h-full object-cover rounded-[12px]" src="foto/saya.jpeg">
+<!-- Backlight aura -->
+<div class="absolute -inset-2 bg-gradient-to-tr from-primary-container/40 via-tertiary-container/20 to-transparent rounded-[24px] -z-10 blur-xl"></div>
+
+<!-- Floated Conversion Metric Micro-card -->
+
+</div>
+</div>
+</div>
+<!-- 4 KPI Stat Counters in sleek card grid -->
+<div class="relative max-w-7xl mx-auto mt-16 lg:mt-24 grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Stat 1 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between text-outline-variant mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Tenure</span>
+<span class="material-symbols-outlined text-primary text-xl group-hover:translate-x-1 transition-transform">schedule</span>
+</div>
+<div>
+<div class="font-stat-counter text-stat-counter text-on-surface font-bold tracking-tight mb-space-xs flex items-baseline">
+<span class="">4</span><span class="text-primary">+</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline font-medium">Years of Experience</p>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between text-outline-variant mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Volume</span>
+<span class="material-symbols-outlined text-primary text-xl group-hover:translate-x-1 transition-transform">layers</span>
+</div>
+<div>
+<div class="font-stat-counter text-stat-counter text-on-surface font-bold tracking-tight mb-space-xs flex items-baseline">
+<span class="">20</span><span class="text-primary">+</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline font-medium">Projects Completed</p>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div class="flex items-center justify-between text-outline-variant mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Validation</span>
+<span class="material-symbols-outlined text-primary text-xl group-hover:translate-x-1 transition-transform">verified</span>
+</div>
+<div>
+<div class="font-stat-counter text-stat-counter text-on-surface font-bold tracking-tight mb-space-xs flex items-baseline">
+<span class="">98</span><span class="text-primary">%</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline font-medium">Client Satisfaction</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Marquee Text Band -->
+<style>
+      .marquee-band{background:#131317;border-top:1px solid #8756F7;border-bottom:1px solid #8756F7;overflow:hidden;padding:1.5rem 0;}
+      .marquee-band .marquee-row{overflow:hidden;white-space:nowrap;width:100%;}
+      .marquee-band .marquee-track{display:flex;align-items:center;width:max-content;will-change:transform;}
+      .marquee-band .marquee-group{display:flex;align-items:center;}
+      .marquee-band .marquee-row.marquee-left .marquee-track{animation:marquee-left 32s linear infinite;}
+      .marquee-band .marquee-row.marquee-right .marquee-track{animation:marquee-right 32s linear infinite;}
+      .marquee-band .marquee-row:hover .marquee-track{animation-play-state:paused;}
+      .marquee-band .marquee-item{font-family:"Space Grotesk",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:clamp(20px,3.2vw,32px);color:#F1EFF4;padding:0 1.25rem;white-space:nowrap;}
+      .marquee-band .marquee-sep{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(20px,3.2vw,32px);color:#d0bcff;line-height:1;white-space:nowrap;}
+      @keyframes marquee-left{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+      @keyframes marquee-right{from{transform:translateX(-50%);}to{transform:translateX(0);}}
+      @media (max-width:640px){.marquee-band{padding:1rem 0;}.marquee-band .marquee-item{padding:0 1rem;}}
+</style>
+<section class="w-full" aria-label="Keahlian desain">
+<div class="marquee-band">
+<div class="marquee-row marquee-left" role="presentation">
+<div class="marquee-track">
+<div class="marquee-group">
+<span class="marquee-item">Graphic Design</span><span class="marquee-sep" aria-hidden="true">&#10022;</span><span class="marquee-item">Branding</span><span class="marquee-sep" aria-hidden="true">&#10022;</span><span class="marquee-item">Typography</span><span class="marquee-sep" aria-hidden="true">&#10022;</span><span class="marquee-item">Visual Design</span><span class="marquee-sep" aria-hidden="true">&#10022;</span>
+</div>
+<div class="marquee-group" aria-hidden="true">
+<span class="marquee-item">Graphic Design</span><span class="marquee-sep">&#10022;</span><span class="marquee-item">Branding</span><span class="marquee-sep">&#10022;</span><span class="marquee-item">Typography</span><span class="marquee-sep">&#10022;</span><span class="marquee-item">Visual Design</span><span class="marquee-sep">&#10022;</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Services Section -->
+<section class="w-full px-margin py-space-xl bg-surface-container-lowest" id="services">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold tracking-widest">SERVICES</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Design Specialization</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Merancang identitas visual, media cetak, dan konten digital yang komunikatif, estetis, dan berdampak.</p>
+</div>
+<!-- Services List / Interactive Accordion -->
+<div class="flex flex-col gap-space-md">
+<!-- Service 01 (Active / Highlighted) -->
+<a class="bg-surface-container-high rounded-xl p-space-lg shadow-md transition-all block" href="#jersey-design">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<span class="font-headline-md text-headline-md text-primary font-bold">01</span>
+<div>
+<div class="flex items-center gap-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Graphic Design</h3>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/30 text-secondary text-label-sm uppercase font-bold tracking-wider">Primary Speciality</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+                  Poster, promotional materials, social media content, dan visual campaign.
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center">
+<span class="material-symbols-outlined text-primary">expand_circle_up</span>
+</div>
+</div>
+<!-- Expanded tags -->
+<div class="mt-space-md pt-space-md flex flex-wrap items-center gap-space-xs">
+<span class="px-space-md py-1 rounded-full bg-surface-container text-secondary text-label-sm">Poster</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container text-secondary text-label-sm">Promotional Materials</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container text-secondary text-label-sm">Social Media Content</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container text-secondary text-label-sm">Visual Campaign</span>
+</div>
+</a>
+<!-- Service 02 -->
+<a class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:bg-surface-container transition-all block" href="#branding-project">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<span class="font-headline-md text-headline-md text-outline font-bold">02</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Branding</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+                  Logo, visual identity, color system, typography, dan brand assets.
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-md flex flex-wrap items-center gap-space-xs">
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Logo</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Visual Identity</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Color System</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Typography</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Brand Assets</span>
+</div>
+</a>
+<!-- Service 03 -->
+<a class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:bg-surface-container transition-all block" href="#layout-project">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<span class="font-headline-md text-headline-md text-outline font-bold">03</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Layout Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+                  Brochure, catalog, editorial, presentation, dan print materials.
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-md flex flex-wrap items-center gap-space-xs">
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Brochure</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Catalog</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Editorial</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Presentation</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Print Materials</span>
+</div>
+</a>
+<!-- Service 04 -->
+<a class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:bg-surface-container transition-all block" href="#uiux-project">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<span class="font-headline-md text-headline-md text-outline font-bold">04</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">UI/UX</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+                  Wireframe, prototyping, user flow, dan desain antarmuka yang intuitif serta mudah digunakan.
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-md flex flex-wrap items-center gap-space-xs">
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Wireframe</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Prototyping</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">User Flow</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">UI Design</span>
+</div>
+</a>
+<a class="bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:bg-surface-container transition-all block" href="#3d-works">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<span class="font-headline-md text-headline-md text-outline font-bold">05</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">3D Works</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+                  3D modeling, rendering, dan desain tiga dimensi untuk visualisasi produk maupun konsep kreatif.
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-md flex flex-wrap items-center gap-space-xs">
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">3D Modeling</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Rendering</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">Texturing</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface-variant text-label-sm">3D Illustration</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 3: Recent Works / Portfolio Section -->
+<section class="w-full px-margin py-space-xl bg-surface" id="works">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold tracking-widest">PORTFOLIO</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">Selected Project</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm max-w-md">A collection of ideas, experiments, and visual explorations.</p>
+</div>
+</div>
+<!-- 2-Column Grid of 4 Sleek Project Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<a href="projects/jersey-design.html" id="jersey-design" class="group block bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Perancangan jersey olahraga dan apparel team dengan elemen grafis kustom dan konsep visual yang bold." src="foto/jersey.png">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute top-space-md left-space-md px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase">
+              Graphic Design
+            </div>
+<div class="absolute bottom-space-md right-space-md px-space-md py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-md">
+              All About Graphic Design
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">Jersey Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                Perancangan jersey olahraga dan apparel team dengan elemen grafis kustom, tipografi dinamis, dan konsep visual yang bold.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="font-label-sm text-label-sm text-outline">Apparel Design &amp; Graphic Design</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Project Card 2 -->
+<a href="projects/branding-project.html" id="branding-project" class="group block bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dokumentasi panduan brand lengkap meliputi logo usage, color palette, tipografi, dan penerapan visual di berbagai media." src="foto/branding.png">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute top-space-md left-space-md px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase">
+              Branding
+            </div>
+<div class="absolute bottom-space-md right-space-md px-space-md py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-md">
+              All About Branding
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">Brand Guideline</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                Dokumentasi panduan brand lengkap meliputi logo usage, color palette, tipografi, tone of voice, dan penerapan visual di berbagai media.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="font-label-sm text-label-sm text-outline">Brand Identity &amp; Guidelines</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Project Card 3 -->
+<a href="projects/layout-project.html" id="layout-project" class="group block bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Perancangan layout editorial dan print materials seperti brochure dan catalog dengan komposisi visual yang rapi." src="foto/Lenovo%20(2).png">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute top-space-md left-space-md px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase">
+              Layout Design
+            </div>
+<div class="absolute bottom-space-md right-space-md px-space-md py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-md">
+              All About Layouting
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">Layout Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                Perancangan layout editorial dan print materials mulai dari brochure, catalog, hingga presentation dengan komposisi visual yang rapi dan profesional.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="font-label-sm text-label-sm text-outline">Creative Direction &amp; Motion</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Project Card 4 -->
+<a href="projects/uiux-project.html" id="uiux-project" class="group block bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Desain UI aplikasi dan website yang dirakit di Figma dengan component library dan auto-layout." src="foto/ui.png">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute top-space-md left-space-md px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase">
+              UI/UX
+            </div>
+<div class="absolute bottom-space-md right-space-md px-space-md py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-md">
+              All About UI/UX
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">UI Figma Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                Desain UI aplikasi dan website yang dirakit di Figma dengan component library, auto-layout, dan design tokens untuk kecepatan development.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="font-label-sm text-label-sm text-outline">UI Design &amp; Prototyping</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Project Card 5 -->
+<a href="projects/3d-works.html" id="3d-works" class="group block bg-surface-container-low rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="3D modeling, rendering, dan desain tiga dimensi untuk visualisasi produk maupun konsep kreatif." src="foto/3d1.png">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute top-space-md left-space-md px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm uppercase">
+              3D Works
+            </div>
+<div class="absolute bottom-space-md right-space-md px-space-md py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-md">
+              All About 3D
+            </div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold group-hover:text-primary transition-colors">3D Works</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+                3D modeling, rendering, dan desain tiga dimensi untuk visualisasi produk maupun konsep kreatif dengan material dan pencahayaan yang detail.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="font-label-sm text-label-sm text-outline">3D Modeling &amp; Rendering</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 4: Experience & Education -->
+<section class="w-full px-margin py-space-xl bg-surface-container-lowest" id="experience">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold tracking-widest">MY JOURNEY</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Learning, Creating &amp; Growing</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Perjalanan saya dalam mengeksplorasi komunikasi visual dan mengembangkan kemampuan kreatif.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Education Column -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="w-[1.125rem] h-[1.125rem] text-primary flex items-center justify-center">
+<svg class="w-full h-full" fill="currentColor" viewBox="0 0 640 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6L57.9 209v54.9c0 47.6 14.2 89.5 37.4 121.4 16.3 22.4 38.5 38.8 66.1 48 48.3 16.1 101.9 23.6 158.6 23.6s110.3-7.5 158.6-23.6c27.6-9.2 49.8-25.6 66.1-48 23.2-31.9 37.4-73.8 37.4-121.4V209l27.1-11.8C633.7 179.1 640 170.1 640 160s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32z"/></svg>
+</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Education</h3>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wider">2024 — PRESENT</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Desain Komunikasi Visual</h4>
+<p class="font-body-md text-body-md text-outline font-medium">SMKN 10 Surabaya</p>
+</div>
+</div>
+<!-- Creative Experience Column -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="text-on-surface text-xl leading-none">&#10022;</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Creative Experience</h3>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wider">2026</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Praktik Kerja Lapangan</h4>
+<p class="font-body-md text-body-md text-outline font-medium">DB Klik — Surabaya</p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-bold tracking-wider">2025 — PRESENT</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Creative Projects</h4>
+<p class="font-body-md text-body-md text-outline font-medium">Personal &amp; School Projects</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Design Skills & Tools -->
+<section class="w-full px-margin py-space-xl bg-surface" id="skills">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold tracking-widest">DESIGN EXPERTISE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Design Skills &amp; Tools</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Disiplin kreatif dan tools yang saya gunakan untuk mengembangkan proyek komunikasi visual.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Skill 01 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-outline font-medium">01</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">GRAPHIC DESIGN</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">90%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" data-width="90" style="width: 0; transition: width 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
+</div>
+</div>
+<!-- Skill 02 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-outline font-medium">02</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">BRAND IDENTITY</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">85%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" data-width="85" style="width: 0; transition: width 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
+</div>
+</div>
+<!-- Skill 03 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-outline font-medium">03</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">LAYOUT DESIGN</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">85%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" data-width="85" style="width: 0; transition: width 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
+</div>
+</div>
+<!-- Skill 04 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-outline font-medium">04</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">DIGITAL CAMPAIGN</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">80%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" data-width="80" style="width: 0; transition: width 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
+</div>
+</div>
+<!-- Skill 05 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-outline font-medium">05</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">UI DESIGN</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">75%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" data-width="75" style="width: 0; transition: width 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
+</div>
+</div>
+<!-- Skill 06 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-outline font-medium">06</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">APPAREL DESIGN</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">75%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" data-width="75" style="width: 0; transition: width 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
+</div>
+</div>
+</div>
+<!-- Tools I Use -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">TOOLS I USE</span>
+<div class="flex flex-wrap gap-space-sm">
+<span class="px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Adobe Photoshop</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Adobe Illustrator</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Canva</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Figma</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">CapCut</span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Adobe Lightroom</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Creative Approach -->
+<section class="w-full px-margin py-space-xl bg-surface-container-lowest" id="approach">
+<style>
+.process-item{opacity:0;transform:translateY(20px);transition:opacity .7s ease-out,transform .7s ease-out;}
+.process-item.in-view{opacity:1;transform:translateY(0);}
+.process-item:hover{transform:translateY(-5px);}
+.process-item:hover .process-num{color:#d0bcff;}
+</style>
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold tracking-widest">CREATIVE APPROACH</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight uppercase">How I Approach Design</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Setiap desain berawal dari sebuah ide. Saya mengubah ide tersebut menjadi visual yang jelas dan bermakna.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-space-lg">
+<div class="process-item border-t border-surface-container-highest pt-space-lg flex flex-col gap-space-sm">
+<span class="pop-num process-num font-display text-display text-outline/40 leading-none">01</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">UNDERSTAND</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Memahami brief, audiens, dan tujuan komunikasi.</p>
+</div>
+<div class="process-item border-t border-surface-container-highest pt-space-lg flex flex-col gap-space-sm">
+<span class="pop-num process-num font-display text-display text-outline/40 leading-none">02</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">EXPLORE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Mencari referensi, moodboard, dan arah visual.</p>
+</div>
+<div class="process-item border-t border-surface-container-highest pt-space-lg flex flex-col gap-space-sm">
+<span class="pop-num process-num font-display text-display text-outline/40 leading-none">03</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">CREATE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Mengembangkan tipografi, warna, layout, gambar, dan komposisi.</p>
+</div>
+<div class="process-item border-t border-surface-container-highest pt-space-lg flex flex-col gap-space-sm">
+<span class="pop-num process-num font-display text-display text-outline/40 leading-none">04</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">REFINE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Meninjau dan menyempurnakan desain untuk hasil akhir yang lebih kuat.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Contact / Lead Conversion Card Section -->
+<section class="w-full px-margin py-space-xl bg-surface" id="contact">
+<div class="relative max-w-7xl mx-auto rounded-2xl bg-surface-container-low p-space-xl lg:p-16 shadow-2xl overflow-hidden">
+<!-- Glow ambient background inside card -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/25 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Form Narrative & Direct Contact Info -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold tracking-widest">START A PROJECT</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">
+              Let's build a high-converting experience together.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+              Saat ini menerima proyek klien baru. Ceritakan tentang produk, timeline, dan tujuan Anda.
+            </p>
+</div>
+<div class="flex flex-col gap-space-md pt-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline">EMAIL DIRECTLY</p>
+<a class="font-body-md text-body-md text-on-surface font-medium hover:text-primary transition-colors" href="mailto:narotamakenshie@gmail.com">narotamakenshie@gmail.com</a>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline">PHONE / WHATSAPP</p>
+<a class="font-body-md text-body-md text-on-surface font-medium hover:text-primary transition-colors" href="tel:+6285854334208">+62 858-5433-4208</a>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-outline">INSTAGRAM</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">@k.nshie</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Lead Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-xl">
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault();var name=this.name.value;var email=this.email.value;var project=this.project.value;var budget=this.budget.value;var message=this.message.value;var body='Nama: '+name+'\nEmail: '+email+'\nJenis Proyek: '+project+'\nRentang Budget: '+budget+'\n\n'+message;var url='https://mail.google.com/mail/?view=cm&to=narotamakenshie@gmail.com&su='+encodeURIComponent('Project Inquiry - Portfolio Website')+'&body='+encodeURIComponent(body);window.open(url,'_blank');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nama Anda</label>
+<input class="w-full bg-surface-container-low px-space-md py-3 rounded text-on-surface placeholder:text-outline font-body-md focus:outline-none focus:bg-surface-container" name="name" placeholder="Nama lengkap Anda" required="" type="text">
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Alamat Email</label>
+<input class="w-full bg-surface-container-low px-space-md py-3 rounded text-on-surface placeholder:text-outline font-body-md focus:outline-none focus:bg-surface-container" name="email" placeholder="email@anda.com" required="" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Jenis Proyek</label>
+<select class="w-full bg-surface-container-low px-space-md py-3 rounded text-on-surface font-body-md focus:outline-none focus:bg-surface-container" name="project">
+<option>Graphic Design</option>
+<option>Branding</option>
+<option>Layout Design</option>
+<option>UI/UX Design</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Rentang Budget</label>
+<select class="w-full bg-surface-container-low px-space-md py-3 rounded text-on-surface font-body-md focus:outline-none focus:bg-surface-container" name="budget">
+<option>Rp500.000 — Rp1.000.000</option>
+<option>Rp1.000.000 — Rp2.500.000</option>
+<option>Rp2.500.000+</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Ruang Lingkup &amp; Tujuan Proyek</label>
+<textarea class="w-full bg-surface-container-low px-space-md py-3 rounded text-on-surface placeholder:text-outline font-body-md focus:outline-none focus:bg-surface-container resize-none" name="message" placeholder="Ceritakan tentang produk, target audiens, dan tanggal peluncuran yang diinginkan..." required="" rows="4"></textarea>
+</div>
+<button class="mt-space-sm w-full py-space-md rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all hover:bg-tertiary-container hover:text-on-tertiary-container shadow-xl flex items-center justify-center gap-space-xs" type="submit">
+<span class="">Send Inquiry &amp; Book Call</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Back to Top & Floating Utility -->
+<div class="w-full px-margin pb-space-lg flex justify-end">
+<a class="inline-flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#">
+<span class="">Back to top</span>
+<span class="material-symbols-outlined text-sm">north</span>
+</a>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><span class="h-6 w-6 rounded-full bg-primary-container text-primary flex items-center justify-center font-label-md text-label-md font-semibold" aria-label="Kenshie Narotama Logo">K</span><span class="font-headline-md text-headline-md text-on-surface-variant">Kenshie Narotama</span></div><p class="font-body-sm text-body-sm text-outline">© 2024 Kenshie Narotama. DKV Student.</p></div></footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.bg-primary[data-width]').forEach(function(bar) {
+          bar.style.width = bar.getAttribute('data-width') + '%';
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  var section = document.getElementById('skills');
+  if (section) observer.observe(section);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var processItems = document.querySelectorAll('.process-item');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var delay = parseInt(entry.target.getAttribute('data-delay') || '0', 10);
+          setTimeout(function() {
+            entry.target.classList.add('in-view');
+          }, delay * 120);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    processItems.forEach(function(item, idx) {
+      item.setAttribute('data-delay', idx);
+      io.observe(item);
+    });
+  } else {
+    processItems.forEach(function(item) { item.classList.add('in-view'); });
+  }
+});
+document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('pointerdown', function(e) {
+    var t = e.target.closest('a, button');
+    if (t && !t.closest('#scroll-nav')) {
+      t.classList.remove('pop');
+      void t.offsetWidth;
+      t.classList.add('pop');
+      setTimeout(function() { t.classList.remove('pop'); }, 200);
+    }
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var toggle = document.getElementById('profile-toggle');
+  var menu = document.getElementById('profile-dropdown');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var open = menu.classList.toggle('hidden');
+      toggle.setAttribute('aria-expanded', String(!open));
+    });
+    document.addEventListener('pointerdown', function(e) {
+      if (!menu.classList.contains('hidden') && !menu.contains(e.target) && e.target !== toggle) {
+        menu.classList.add('hidden');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var container = document.getElementById('scroll-nav');
+  var track = document.getElementById('scroll-track');
+  var thumb = document.getElementById('scroll-thumb');
+  var targets = ['profile', 'services', 'works', 'experience', 'skills', 'contact'];
+  if (!container || !track || !thumb) return;
+  var usable = 0, step = 0, lastIdx = 0;
+  var dragging = false;
+  function measure() {
+    var trackH = track.offsetHeight;
+    var thumbH = thumb.offsetHeight;
+    usable = Math.max(0, trackH - thumbH);
+    step = targets.length > 1 ? usable / (targets.length - 1) : usable;
+  }
+  function setThumb(i) {
+    measure();
+    thumb.style.top = (usable > 0 ? i * step : 0) + 'px';
+  }
+  function goTo(i) {
+    var el = document.getElementById(targets[i]);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  function currentIdx() {
+    var y = window.scrollY + window.innerHeight * 0.35;
+    var cur = 0;
+    for (var i = 0; i < targets.length; i++) {
+      var el = document.getElementById(targets[i]);
+      if (el && el.offsetTop <= y) cur = i;
+    }
+    return cur;
+  }
+  function update() { if (!dragging) setThumb(currentIdx()); }
+  function idxFromY(clientY) {
+    var rect = track.getBoundingClientRect();
+    if (usable <= 0) return 0;
+    var rel = Math.max(0, Math.min(1, (clientY - rect.top - thumb.offsetHeight / 2) / usable));
+    return Math.round(rel * (targets.length - 1));
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', function() { measure(); update(); }, { passive: true });
+  measure();
+  update();
+  thumb.addEventListener('pointerdown', function(e) {
+    dragging = true;
+    if (thumb.setPointerCapture) thumb.setPointerCapture(e.pointerId);
+    e.preventDefault();
+  });
+  var rAF = false, dragTop = 0;
+  document.addEventListener('pointermove', function(e) {
+    if (!dragging) return;
+    measure();
+    var rect = track.getBoundingClientRect();
+    dragTop = Math.max(0, Math.min(usable, e.clientY - rect.top - thumb.offsetHeight / 2));
+    thumb.style.top = dragTop + 'px';
+    if (usable > 0) {
+      var scrollMax = document.documentElement.scrollHeight - window.innerHeight;
+      var targetTop = (dragTop / usable) * scrollMax;
+      if (!rAF) {
+        rAF = true;
+        window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        setTimeout(function() { rAF = false; }, 70);
+      }
+    }
+    e.preventDefault();
+  });
+  function endDrag() {
+    if (!dragging) return;
+    dragging = false;
+    if (step > 0) {
+      var idx = Math.max(0, Math.min(targets.length - 1, Math.round(dragTop / step)));
+      setThumb(idx);
+      goTo(idx);
+    }
+  }
+  document.addEventListener('pointerup', endDrag);
+  document.addEventListener('pointercancel', endDrag);
+  track.addEventListener('click', function(e) {
+    if (dragging || e.target === thumb) return;
+    lastIdx = idxFromY(e.clientY);
+    setThumb(lastIdx);
+    goTo(lastIdx);
+  });
+});
+</script>
+</body></html>
